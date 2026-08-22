@@ -1,4 +1,9 @@
-# SistemaGestao
+# Sistema de Gestão
+
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![C%23](https://img.shields.io/badge/C%23-.NET-512BD4)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1)
 
 Projeto prático de desenvolvimento de sistemas criado para aplicar e consolidar conhecimentos em programação, banco de dados e versionamento de código.
 
