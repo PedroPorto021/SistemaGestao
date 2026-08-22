@@ -6,6 +6,7 @@ Projeto prático de desenvolvimento de sistemas criado para aplicar e consolidar
 
 - C#
 - .NET
+- JavaScript
 - MySQL
 - Git
 - GitHub
@@ -15,6 +16,7 @@ Projeto prático de desenvolvimento de sistemas criado para aplicar e consolidar
 
 - `backend-csharp/` — aplicação e lógica do sistema em C#
 - `database/` — scripts e estudos de banco de dados MySQL
+- `frontend-js/` — estudos e fundamentos de JavaScript aplicados ao sistema
 
 ## O que já foi desenvolvido
 
