@@ -67,3 +67,23 @@ status
 - Entrega mínima.
 - Tempo estimado.
 - Primeiro comando ou ação.
+
+## Presença profissional e interação
+
+### Verificação diária — aproximadamente 2 minutos
+
+- Houve progresso real que precisa ser documentado?
+- Existe alguma alteração válida para registrar com Git e GitHub?
+- Ficou alguma pendência que precisa ser retomada na próxima sessão?
+
+### Verificação semanal
+
+- Estudei e favoritei pelo menos um repositório realmente útil?
+- Segui ou interagi respeitosamente com alguém da área?
+- Registrei respostas, visitas ou aprendizados gerados pela interação?
+- Apresentei algum projeto usando problema, construção, aprendizado, resultado e próximo passo?
+
+### Pendências externas
+
+- Verificar respostas sobre a falha da imagem social:
+  https://github.com/orgs/community/discussions/205661
