@@ -46,7 +46,7 @@ WHERE id = 2;
 -- 9. CONFERIR A ALTERAÇÃO
 SELECT *
 FROM clientes
-WHERE id = 4;
+WHERE id = 2;
 
 -- 10. EXCLUIR UM CLIENTE
 DELETE FROM clientes
@@ -80,3 +80,7 @@ FROM clientes
 WHERE nome = 'Ana'
 OR nome = 'Carlos';
 
+-- 15. CONSULTAR CLIENTE PELO ID
+SELECT id, nome, email
+FROM clientes
+WHERE id = 1;
