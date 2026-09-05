@@ -32,11 +32,22 @@ Projeto prático de desenvolvimento de sistemas criado para aplicar e consolidar
 - Estrutura inicial do backend em C#
 - Primeiro programa executado com .NET
 - Versionamento com Git e GitHub
+- Consulta de clientes por ID em SQL
+- Cadastro de participantes com validação de nome e idade
+- Modelagem inicial com classe, objeto e propriedades em C#
 
 ## Objetivo
 
 Evoluir este projeto gradualmente para um sistema de gestão completo, integrando backend, banco de dados e futuramente interfaces web e mobile.
 
+## Próximos passos
+
+- Melhorar a validação das entradas do usuário
+- Evoluir a integração entre C#, SQL e banco de dados
+- Iniciar uma interface web responsiva e interativa
+- Aplicar inglês técnico e automações com Python progressivamente
+
 ## Status
 
 Em desenvolvimento
+
