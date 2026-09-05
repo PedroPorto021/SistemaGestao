@@ -14,11 +14,16 @@ if (nome == "")
 Console.Write("Digite a idade do participante: ");
 int idade = int.Parse(Console.ReadLine() ?? "0");
 
-if (idade >= 18)
+Participante participante = new Participante();
+
+participante.Nome = nome;
+participante.Idade = idade;
+
+if (participante.Idade >= 18)
 {
-    Console.WriteLine($"{nome}, cadastro aprovado para o evento.");
+    Console.WriteLine($"{participante.Nome}, cadastro aprovado para o evento.");
 }
 else
 {
-    Console.WriteLine($"{nome}, cadastro negado. O evento é permitido apenas para maiores de 18 anos.");
+    Console.WriteLine($"{participante.Nome}, cadastro negado. O evento é permitido apenas para maiores de 18 anos.");
 }
