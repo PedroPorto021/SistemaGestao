@@ -40,3 +40,14 @@ function exibirResumoEvento() {
 
 // Executa a função criada acima.
 exibirResumoEvento();
+
+const formulario = document.querySelector("form");
+
+formulario.addEventListener("submit", function (evento) {
+    evento.preventDefault();
+
+    const nomeDigitado = document.querySelector("#nome").value;
+    const idadeDigitada = Number(document.querySelector("#idade").value);
+
+    console.log(`Participante: ${nomeDigitado}, idade: ${idadeDigitada}`);
+});

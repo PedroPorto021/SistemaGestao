@@ -23,6 +23,8 @@ Quero encerrar corretamente, sem deixar alterações ou aprendizados importantes
 - Confirme o `push` e o estado final do repositório.
 - Não crie commit quando não houver alteração real.
 - Adapte o próximo cronograma ao tempo disponível.
+- Consulte o [adendo da trilha de aprendizagem](../trilha-aprendizagem.md) ao definir a próxima sessão.
+- Não use `git add .`: revise e prepare apenas arquivos específicos. Uma árvore de trabalho com pendências preservadas não significa que a entrega falhou.
 
 ## Formato esperado
 
@@ -37,6 +39,8 @@ Quero encerrar corretamente, sem deixar alterações ou aprendizados importantes
 - Conceitos praticados.
 - Comandos e símbolos importantes.
 - Relação com conhecimentos anteriores.
+- Termos de inglês técnico praticados, significado no contexto e uma frase curta para revisão.
+- O que consegui explicar, alterar e testar por conta própria; o que ainda exige ajuda.
 
 ### Diagnóstico
 
@@ -60,6 +64,10 @@ status
 - O que merece ser documentado.
 - O que pode ser compartilhado.
 - Uma mensagem curta no formato problema → construção → aprendizado → resultado.
+- Como a entrega contribui para Front-end, interfaces web e sistemas ou para sua base técnica.
+- Quando pertinente, registrar aparência, uso em telas diferentes, acessibilidade e comportamento da interface.
+- Identificar o uso de IA, modelos ou construtores visuais e a contribuição própria, sem inventar experiência ou resultados.
+- Priorizar uma entrega real antes de nova postagem; manter a manutenção dos perfis breve.
 
 ### Próxima sessão
 
@@ -67,6 +75,7 @@ status
 - Entrega mínima.
 - Tempo estimado.
 - Primeiro comando ou ação.
+- Atualizar o adendo somente quando houver uma decisão real de trilha ou método, preservando o guia PDF original.
 
 ## Presença profissional e interação
 
