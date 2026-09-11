@@ -77,8 +77,9 @@ Este documento complementa o `Guia_Estrategico_Desenvolvimento_TI_IA_Renda.pdf`.
 
 ## Próxima evolução registrada
 
-- Criar a primeira interface web do cadastro de participantes em `frontend-js`.
-- Sequência: estrutura HTML → aparência com CSS → comportamento com JavaScript.
-- Estado atual: `index.html` criado com idioma `pt-BR`, título da aba e título principal visível.
-- Próximo bloco: adicionar um rótulo e um campo para o nome do participante, associando `label`, `for`, `input` e `id`.
-- Incluir uma microaula de DevTools durante a evolução do Front-end: inspecionar o DOM em `Elements`, testar CSS em `Styles`, interpretar valores em `Computed` e diagnosticar JavaScript no `Console`.
+- A primeira interface web do cadastro de participantes foi criada em `frontend-js`.
+- O HTML possui formulário com nome, idade, validações nativas e mensagem dinâmica acessível com `aria-live`.
+- O CSS inicial aplica paleta coerente com a identidade profissional, tipografia, espaçamento, card, campos, botão, `hover` e foco visível.
+- O JavaScript captura o envio, impede o recarregamento e apresenta o cadastro na própria página.
+- O DevTools foi utilizado para inspecionar `Elements` e `Styles`, testar valores temporários e simular a largura de 320px.
+- Próximo bloco: aplicar a regra de idade ao formulário com `if/else` e diferenciar visualmente mensagens de aprovação e negação.

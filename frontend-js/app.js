@@ -48,6 +48,10 @@ formulario.addEventListener("submit", function (evento) {
 
     const nomeDigitado = document.querySelector("#nome").value;
     const idadeDigitada = Number(document.querySelector("#idade").value);
+    const mensagem = document.querySelector("#mensagem");
+
+    mensagem.textContent =
+        `${nomeDigitado}, cadastro recebido. Idade: ${idadeDigitada}.`;
 
     console.log(`Participante: ${nomeDigitado}, idade: ${idadeDigitada}`);
 });
