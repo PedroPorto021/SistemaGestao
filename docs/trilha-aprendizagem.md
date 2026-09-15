@@ -5,18 +5,22 @@ Este documento complementa o `Guia_Estrategico_Desenvolvimento_TI_IA_Renda.pdf`.
 ## Direcionamento profissional
 
 - Formação principal: Desenvolvimento de Sistemas.
-- Foco de portfólio: Front-end, interfaces web e experiências visuais e interativas.
-- Identidade usada na apresentação profissional: **Front-end • Interfaces Web • Sistemas**.
-- Posicionamento atual: estudante em formação, construindo projetos práticos e buscando oportunidades iniciais.
-- Não utilizar títulos como especialista, desenvolvedor experiente ou full-stack antes que os projetos comprovem essas competências.
+- Direção de especialização: desenvolvimento Full-stack, integrando Front-end, backend, banco de dados e APIs.
+- Diferencial de portfólio: Front-end, interfaces web e experiências visuais e interativas.
+- Identidade visual utilizada: **Front-end • Interfaces Web • Sistemas**.
+- Posicionamento atual: estudante em formação Full-stack, construindo projetos práticos e buscando oportunidades iniciais.
+- Não utilizar títulos como especialista ou desenvolvedor experiente antes que os projetos comprovem essas competências.
 
-## Base técnica preservada
+## Base técnica Full-stack
 
-- Java e orientação a objetos para fundamentos de programação e backend.
-- C# como segunda linguagem e apoio ao desenvolvimento de sistemas.
-- SQL para modelagem, consultas, persistência e aplicações orientadas a dados.
-- Git e GitHub integrados ao desenvolvimento e à apresentação dos projetos.
-- Redes, HTTP, APIs e infraestrutura como conhecimentos complementares.
+- Front-end: HTML, CSS, JavaScript e, progressivamente, TypeScript e React.
+- Backend: Java e C# para lógica, POO, regras de negócio e futuras APIs.
+- Banco de dados: SQL para modelagem, consultas, relacionamentos e persistência.
+- Automação: Python e PowerShell para arquivos, dados, APIs e tarefas repetitivas.
+- Integração: HTTP, JSON, APIs REST e autenticação para conectar as camadas.
+- Fluxo profissional: Git e GitHub integrados ao desenvolvimento e ao portfólio.
+- Sustentação: redes, Linux, segurança básica, testes e deploy.
+- Diferenciais: IA aplicada, interfaces visuais, marketing e compreensão do negócio.
 
 ## Trilha principal de Front-end
 
@@ -83,3 +87,16 @@ Este documento complementa o `Guia_Estrategico_Desenvolvimento_TI_IA_Renda.pdf`.
 - O JavaScript captura o envio, impede o recarregamento e apresenta o cadastro na própria página.
 - O DevTools foi utilizado para inspecionar `Elements` e `Styles`, testar valores temporários e simular a largura de 320px.
 - Próximo bloco: aplicar a regra de idade ao formulário com `if/else` e diferenciar visualmente mensagens de aprovação e negação.
+
+### Primeira automação em Python
+
+- Python 3.13.15 e a extensão oficial do VS Code foram configurados.
+- Foi criado `automation-python/resumo_participantes.py`.
+- O script utiliza uma lista de participantes fictícios.
+- Cada participante é representado por um dicionário com nome e idade.
+- Um laço `for` percorre os participantes.
+- A condição `if/else` verifica a idade mínima.
+- Contadores geram o resumo de aprovados e não aprovados.
+- A implementação foi testada, revisada e publicada no GitHub.
+- Commit: `dd73ae5 feat: adiciona resumo de participantes em Python`.
+- Próxima evolução em Python: ler participantes de um arquivo JSON ou CSV antes de avançar para APIs.
