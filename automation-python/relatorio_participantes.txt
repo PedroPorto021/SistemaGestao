@@ -1,0 +1,7 @@
+Ana: aprovado.
+Bruno: não aprovado.
+Carla: não aprovado.
+
+Resumo:
+Aprovados: 1
+Não aprovados: 2
