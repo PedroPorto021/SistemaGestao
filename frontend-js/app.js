@@ -50,8 +50,21 @@ formulario.addEventListener("submit", function (evento) {
     const idadeDigitada = Number(document.querySelector("#idade").value);
     const mensagem = document.querySelector("#mensagem");
 
-    mensagem.textContent =
-        `${nomeDigitado}, cadastro recebido. Idade: ${idadeDigitada}.`;
+    // caminho aprovado
+    if (idadeDigitada >= 18) {
+        mensagem.textContent =
+            `${nomeDigitado}, cadastro aprovado para o evento.`;
+
+        mensagem.className = "aprovado";
+    }
+
+    // caminho não aprovado
+    else {
+        mensagem.textContent =
+            `${nomeDigitado}, cadastro não aprovado. O evento é permitido apenas para maiores de idade.`;
+
+        mensagem.className = "reprovado";
+    }
 
     console.log(`Participante: ${nomeDigitado}, idade: ${idadeDigitada}`);
 });

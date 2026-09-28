@@ -66,3 +66,12 @@ button:focus-visible {
     color: #bae6fb;
     margin-bottom: 16px;
 }
+
+#mensagem.aprovado {
+    color: #86efac;
+}
+
+#mensagem.reprovado {
+    color: #fca5a5;
+}
+
