@@ -19,7 +19,7 @@ Participante participante = new Participante();
 participante.Nome = nome;
 participante.Idade = idade;
 
-if (participante.Idade >= 18)
+if (participante.PodeParticipar())
 {
     Console.WriteLine($"{participante.Nome}, cadastro aprovado para o evento.");
 }
