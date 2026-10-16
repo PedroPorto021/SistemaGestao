@@ -86,7 +86,12 @@ Este documento complementa o `Guia_Estrategico_Desenvolvimento_TI_IA_Renda.pdf`.
 - O CSS inicial aplica paleta coerente com a identidade profissional, tipografia, espaçamento, card, campos, botão, `hover` e foco visível.
 - O JavaScript captura o envio, impede o recarregamento e apresenta o cadastro na própria página.
 - O DevTools foi utilizado para inspecionar `Elements` e `Styles`, testar valores temporários e simular a largura de 320px.
-- Próximo bloco: aplicar a regra de idade ao formulário com `if/else` e diferenciar visualmente mensagens de aprovação e negação.
+- A interface aplica a regra de idade com `if/else`.
+- Mensagens de aprovação e reprovação recebem classes CSS e cores diferentes.
+- Foram testados os caminhos aprovado, reprovado e o valor-limite de 18 anos.
+- A interface foi verificada com DevTools, largura de 320px e navegação pelo teclado.
+- Commit: `4152db2 feat: adiciona validacao visual de participantes`.
+- Próxima evolução no Front-end: apresentar os participantes cadastrados em uma lista temporária.
 
 ### Primeira automação em Python
 
@@ -99,4 +104,9 @@ Este documento complementa o `Guia_Estrategico_Desenvolvimento_TI_IA_Renda.pdf`.
 - Contadores geram o resumo de aprovados e não aprovados.
 - A implementação foi testada, revisada e publicada no GitHub.
 - Commit: `dd73ae5 feat: adiciona resumo de participantes em Python`.
+- O script passou a acumular as linhas do relatório em uma lista.
+- Foram praticados `append`, `with open`, `write`, `join` e codificação UTF-8.
+- A automação gera `automation-python/relatorio_participantes.txt`.
+- O Black Formatter foi configurado para auxiliar na formatação do código Python.
+- Commit: `cdef127 feat: gera relatorio de participantes em Python`.
 - Próxima evolução em Python: ler participantes de um arquivo JSON ou CSV antes de avançar para APIs.

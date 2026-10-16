@@ -22,12 +22,12 @@ Evoluir o projeto até formar um sistema de gestão completo, conectando interfa
 - Campos de nome e idade com validações do HTML
 - Apresentação adaptada para telas estreitas
 - Estilos de foco e interação com CSS
-- Captura do formulário e apresentação do resultado com JavaScript
+- Validação de idade e mensagens visuais de aprovação e reprovação com JavaScript
 - Cadastro e validação de participantes em C#
 - Modelagem inicial com classe, objeto e propriedades
 - Banco de dados e tabela de clientes
 - Operações CRUD e consultas por ID em SQL
-- Resumo de participantes aprovados e não aprovados com Python
+- Classificação de participantes e geração de relatório em arquivo texto com Python
 - Documentação da evolução e versionamento com Git/GitHub
 
 Todos os dados utilizados nos exercícios são fictícios.
@@ -64,11 +64,14 @@ py automation-python/resumo_participantes.py
 
 ### Banco de dados
 
-Abra `database/01_fundamentos_crud_clientes.sql` no MySQL Workbench e execute somente os comandos que deseja estudar ou testar.
+Abra os scripts no MySQL Workbench e execute somente os comandos que deseja estudar ou testar:
+
+- `database/01_fundamentos_crud_clientes.sql` — fundamentos e consultas de clientes;
+- `database/02_participantes.sql` — tabela, inserções e consultas de participantes.
 
 ## Próximos passos
 
-- Aplicar a regra de idade ao formulário com mensagens visuais
+- Exibir os participantes cadastrados em uma lista temporária na interface web
 - Criar uma API para o backend
 - Persistir participantes no banco de dados
 - Conectar o front-end à API
