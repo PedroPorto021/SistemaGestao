@@ -5,3 +5,5 @@ Carla: não aprovado.
 Resumo:
 Aprovados: 1
 Não aprovados: 2
+Total de participantes: 3
+Taxa de aprovação: 33.3%
