@@ -12,7 +12,12 @@ if (nome == "")
 }
 
 Console.Write("Digite a idade do participante: ");
-int idade = int.Parse(Console.ReadLine() ?? "0");
+
+if (!int.TryParse(Console.ReadLine(), out int idade) || idade < 0)
+{
+    Console.WriteLine("Idade inválida. Digite um número inteiro igual ou maior que zero.");
+    return;
+}
 
 Participante participante = new Participante();
 
@@ -25,5 +30,5 @@ if (participante.PodeParticipar())
 }
 else
 {
-    Console.WriteLine($"{participante.Nome}, cadastro negado. O evento é permitido apenas para maiores de 18 anos.");
+    Console.WriteLine($"{participante.Nome}, cadastro negado. O evento é permitido apenas para maiores de idade (18 anos ou mais).");
 }
