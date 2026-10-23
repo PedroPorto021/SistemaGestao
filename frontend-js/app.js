@@ -46,9 +46,17 @@ const formulario = document.querySelector("form");
 formulario.addEventListener("submit", function (evento) {
     evento.preventDefault();
 
-    const nomeDigitado = document.querySelector("#nome").value;
+    const nomeDigitado = document.querySelector("#nome").value.trim();
     const idadeDigitada = Number(document.querySelector("#idade").value);
     const mensagem = document.querySelector("#mensagem");
+
+    if (nomeDigitado === "") {
+        mensagem.textContent =
+            "Nome inválido. Digite um nome para continuar.";
+
+        mensagem.className = "reprovado";
+        return;
+    }
 
     // caminho aprovado
     if (idadeDigitada >= 18) {
