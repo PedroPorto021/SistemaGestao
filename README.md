@@ -25,9 +25,13 @@ Evoluir o projeto até formar um sistema de gestão completo, conectando interfa
 - Validação de idade e mensagens visuais de aprovação e reprovação com JavaScript
 - Cadastro e validação de participantes em C#
 - Modelagem inicial com classe, objeto e propriedades
-- Banco de dados e tabela de clientes
+- Banco de dados com tabelas de clientes e participantes
 - Operações CRUD e consultas por ID em SQL
 - Classificação de participantes e geração de relatório em arquivo texto com Python
+- Total de participantes e taxa de aprovação no relatório automatizado
+- Normalização e validação do nome com JavaScript e `trim()`
+- Validação segura da idade com `int.TryParse`
+- Filtros, ordenação, aliases, classificação e contagens em SQL
 - Documentação da evolução e versionamento com Git/GitHub
 
 Todos os dados utilizados nos exercícios são fictícios.

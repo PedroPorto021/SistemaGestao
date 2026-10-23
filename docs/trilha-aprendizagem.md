@@ -110,3 +110,36 @@ Este documento complementa o `Guia_Estrategico_Desenvolvimento_TI_IA_Renda.pdf`.
 - O Black Formatter foi configurado para auxiliar na formatação do código Python.
 - Commit: `cdef127 feat: gera relatorio de participantes em Python`.
 - Próxima evolução em Python: ler participantes de um arquivo JSON ou CSV antes de avançar para APIs.
+
+### Evoluções recentes do SistemaGestao
+
+#### SQL
+
+- Foram praticados aliases com `AS`.
+- Foram adicionados filtros de maiores e menores de idade.
+- Foi utilizada ordenação com critério de desempate.
+- A classificação foi construída com `CASE WHEN`.
+- Foram adicionadas contagens com `COUNT(*)`.
+- Commit: `513ffe0 feat: adiciona filtros e classificacao de participantes`.
+
+#### C# e regras de negócio
+
+- A entrada de idade passou de `int.Parse` para `int.TryParse`.
+- Entradas não numéricas e idades negativas passaram a ser rejeitadas.
+- A mensagem de reprovação foi alinhada à regra de 18 anos ou mais.
+- Commit: `36c379f fix: valida idade no cadastro de participante`.
+
+#### JavaScript e Front-end
+
+- O nome digitado passou a ser normalizado com `trim()`.
+- Nomes vazios ou compostos apenas por espaços passaram a ser rejeitados.
+- Commit: `1259267 fix: valida nome no cadastro de participante`.
+
+#### Python e automação
+
+- O relatório passou a apresentar o total de participantes.
+- Foi adicionada a taxa de aprovação com proteção contra divisão por zero.
+- As métricas são exibidas no terminal e gravadas no arquivo de relatório.
+- Commit: `a06cc98 feat: adiciona metricas ao relatorio de participantes`.
+
+Os módulos continuam independentes. Ainda não existe integração entre Front-end, C#, Python e MySQL.
