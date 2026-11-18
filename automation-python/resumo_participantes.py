@@ -1,8 +1,11 @@
-participantes = [
-    {"nome": "Ana", "idade": 20},
-    {"nome": "Bruno", "idade": 16},
-    {"nome": "Carla", "idade": 17},
-]
+import json
+
+with open(
+    "automation-python/participantes.json",
+    "r",
+    encoding="utf-8",
+) as arquivo:
+    participantes = json.load(arquivo)
 
 aprovados = 0
 nao_aprovados = 0
