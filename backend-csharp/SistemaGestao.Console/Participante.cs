@@ -1,8 +1,7 @@
 public class Participante
 {
-    public string Nome { get; set; } = "";
-    public int Idade { get; set; }
-
+    public string Nome { get; private set; } = "";
+    public int Idade { get; private set; }
     public Participante(string nome, int idade)
     {
         Nome = nome;
