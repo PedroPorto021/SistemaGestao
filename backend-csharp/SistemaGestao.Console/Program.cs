@@ -19,10 +19,7 @@ if (!int.TryParse(Console.ReadLine(), out int idade) || idade < 0)
     return;
 }
 
-Participante participante = new Participante();
-
-participante.Nome = nome;
-participante.Idade = idade;
+Participante participante = new Participante(nome, idade);
 
 if (participante.PodeParticipar())
 {
