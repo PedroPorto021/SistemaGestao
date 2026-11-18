@@ -17,6 +17,7 @@ Atualmente, o projeto reúne interface web, fundamentos de backend em C#, script
 ![Interface de cadastro de participantes](docs/images/interface-participantes.png)
 
 > A interface atual mantém os participantes somente na memória do navegador. Os dados são apagados quando a página é atualizada e ainda não existe integração com API ou banco de dados.
+> **Acesse a demonstração online:** [SistemaGestao — Cadastro de participantes](https://pedroporto021.github.io/SistemaGestao/frontend-js/)
 
 ## Objetivo
 
