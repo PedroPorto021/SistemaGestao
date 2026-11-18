@@ -41,14 +41,55 @@ function exibirResumoEvento() {
 // Executa a função criada acima.
 exibirResumoEvento();
 
-const formulario = document.querySelector("form");
+const formulario = document.querySelector("#form-participante");
+const campoNome = document.querySelector("#nome");
+const campoIdade = document.querySelector("#idade");
+const mensagem = document.querySelector("#mensagem");
 
-formulario.addEventListener("submit", function (evento) {
-    evento.preventDefault();
+const listaParticipantes = document.querySelector("#lista-participantes");
+const listaVazia = document.querySelector("#lista-vazia");
+const totalParticipantes = document.querySelector("#total-participantes");
 
-    const nomeDigitado = document.querySelector("#nome").value.trim();
-    const idadeDigitada = Number(document.querySelector("#idade").value);
-    const mensagem = document.querySelector("#mensagem");
+const participantes = [];
+
+function renderizarParticipantes() {
+    listaParticipantes.innerHTML = "";
+
+    participantes.forEach(function (participante) {
+        const item = document.createElement("li");
+        item.className = "participant-item";
+
+        const informacoes = document.createElement("div");
+
+        const nomeParticipante = document.createElement("strong");
+        nomeParticipante.className = "participant-name";
+        nomeParticipante.textContent = participante.nome;
+
+        const idadeParticipante = document.createElement("span");
+        idadeParticipante.className = "participant-meta";
+        idadeParticipante.textContent =
+            `${participante.idade} anos`;
+
+        const situacao = document.createElement("span");
+        situacao.className = "status-tag approved";
+        situacao.textContent = "Aprovado";
+
+        informacoes.append(nomeParticipante, idadeParticipante);
+        item.append(informacoes, situacao);
+        listaParticipantes.append(item);
+    });
+
+    totalParticipantes.textContent =
+        String(participantes.length);
+
+    listaVazia.hidden = participantes.length > 0;
+}
+
+formulario.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const nomeDigitado = campoNome.value.trim();
+    const idadeDigitada = Number(campoIdade.value);
 
     if (nomeDigitado === "") {
         mensagem.textContent =
@@ -58,21 +99,32 @@ formulario.addEventListener("submit", function (evento) {
         return;
     }
 
-    // caminho aprovado
     if (idadeDigitada >= 18) {
         mensagem.textContent =
             `${nomeDigitado}, cadastro aprovado para o evento.`;
 
         mensagem.className = "aprovado";
-    }
 
-    // caminho não aprovado
-    else {
+        const participante = {
+            nome: nomeDigitado,
+            idade: idadeDigitada,
+        };
+
+        participantes.push(participante);
+        renderizarParticipantes();
+
+        formulario.reset();
+        campoNome.focus();
+    } else {
         mensagem.textContent =
-            `${nomeDigitado}, cadastro não aprovado. O evento é permitido apenas para maiores de idade.`;
+            `${nomeDigitado}, cadastro não aprovado. O evento é permitido para pessoas com 18 anos ou mais.`;
 
         mensagem.className = "reprovado";
     }
 
-    console.log(`Participante: ${nomeDigitado}, idade: ${idadeDigitada}`);
+    console.log(
+        `Participante: ${nomeDigitado}, idade: ${idadeDigitada}`
+    );
 });
+
+renderizarParticipantes();

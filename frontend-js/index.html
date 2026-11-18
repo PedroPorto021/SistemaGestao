@@ -4,27 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Interface de cadastro e validação de participantes do projeto SistemaGestao.">
+
     <link rel="stylesheet" href="style.css">
-    <title>Cadastro de participantes | SistemaGestao</title>
+
+    <title>Participantes | SistemaGestao</title>
 </head>
 
 <body>
-    <h1>Cadastro de participantes</h1>
+    <div class="page-shell">
+        <header class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">
+                    Projeto de aprendizagem • SistemaGestao
+                </p>
 
-    <form>
-        <div>
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" required>
-        </div>
+                <h1>Cadastro de participantes</h1>
 
-        <div>
-            <label for="idade">Idade</label>
-            <input type="number" id="idade" name="idade" min="0" required>
-        </div>
+                <p class="hero-description">
+                    Cadastre participantes, valide a idade mínima e acompanhe
+                    os registros criados durante esta sessão.
+                </p>
+            </div>
 
-        <button type="submit">Cadastrar participante</button>
-        <p id="mensagem" aria-live="polite"></p>
-    </form>
+            <div class="status-card">
+                <span class="status-dot" aria-hidden="true"></span>
+
+                <div>
+                    <strong>Modo demonstração</strong>
+                    <small>Dados armazenados somente nesta sessão</small>
+                </div>
+            </div>
+        </header>
+
+        <main class="workspace">
+            <section class="panel form-panel" aria-labelledby="titulo-cadastro">
+                <div class="panel-header">
+                    <div>
+                        <p class="panel-kicker">Novo cadastro</p>
+                        <h2 id="titulo-cadastro">Dados do participante</h2>
+                    </div>
+
+                    <span class="step-badge" aria-hidden="true">01</span>
+                </div>
+
+                <form id="form-participante">
+                    <div class="form-field">
+                        <label for="nome">Nome completo</label>
+
+                        <input type="text" id="nome" name="nome" autocomplete="name" aria-describedby="ajuda-nome"
+                            required>
+
+                        <small id="ajuda-nome">
+                            Use um nome fictício para esta demonstração.
+                        </small>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="idade">Idade</label>
+
+                        <input type="number" id="idade" name="idade" min="0" inputmode="numeric"
+                            aria-describedby="ajuda-idade" required>
+
+                        <small id="ajuda-idade">
+                            O evento é permitido para pessoas com 18 anos ou mais.
+                        </small>
+                    </div>
+
+                    <button type="submit">
+                        Cadastrar participante
+                    </button>
+
+                    <p id="mensagem" class="feedback" aria-live="polite"></p>
+                </form>
+            </section>
+
+            <section class="panel list-panel" aria-labelledby="titulo-participantes">
+                <div class="panel-header">
+                    <div>
+                        <p class="panel-kicker">Visão geral</p>
+                        <h2 id="titulo-participantes">
+                            Participantes cadastrados
+                        </h2>
+                    </div>
+
+                    <span id="total-participantes" class="counter" aria-label="Total de participantes">
+                        0
+                    </span>
+                </div>
+
+                <p id="lista-vazia" class="empty-state">
+                    Nenhum participante cadastrado nesta sessão.
+                </p>
+
+                <ul id="lista-participantes" class="participant-list"></ul>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>
+                SistemaGestao • Projeto prático de Desenvolvimento de Sistemas
+            </p>
+        </footer>
+    </div>
 
     <script src="app.js"></script>
 </body>
