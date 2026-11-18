@@ -10,7 +10,13 @@
 
 Projeto integrador desenvolvido progressivamente para praticar **Desenvolvimento de Sistemas** com uma abordagem Full-stack.
 
-Atualmente, o projeto reúne exercícios de interface web, lógica em C#, banco de dados SQL e automação com Python. Os módulos ainda são independentes e serão integrados gradualmente por meio de uma API.
+Atualmente, o projeto reúne interface web, fundamentos de backend em C#, scripts SQL e automação com Python. Os módulos ainda são independentes e serão integrados gradualmente por meio de uma API.
+
+## Demonstração
+
+![Interface de cadastro de participantes](docs/images/interface-participantes.png)
+
+> A interface atual mantém os participantes somente na memória do navegador. Os dados são apagados quando a página é atualizada e ainda não existe integração com API ou banco de dados.
 
 ## Objetivo
 
@@ -18,23 +24,47 @@ Evoluir o projeto até formar um sistema de gestão completo, conectando interfa
 
 ## Funcionalidades atuais
 
-- Interface web para cadastro de participantes
-- Campos de nome e idade com validações do HTML
-- Apresentação adaptada para telas estreitas
-- Estilos de foco e interação com CSS
-- Validação de idade e mensagens visuais de aprovação e reprovação com JavaScript
-- Cadastro e validação de participantes em C#
-- Modelagem inicial com classe, objeto e propriedades
-- Banco de dados com tabelas de clientes e participantes
-- Operações CRUD e consultas por ID em SQL
-- Classificação de participantes e geração de relatório em arquivo texto com Python
-- Total de participantes e taxa de aprovação no relatório automatizado
-- Normalização e validação do nome com JavaScript e `trim()`
-- Validação segura da idade com `int.TryParse`
-- Filtros, ordenação, aliases, classificação e contagens em SQL
-- Documentação da evolução e versionamento com Git/GitHub
+### Front-end
 
-Todos os dados utilizados nos exercícios são fictícios.
+- Interface responsiva para cadastro de participantes
+- Identidade visual em formato de painel administrativo
+- Formulário com labels, textos auxiliares e foco visível
+- Validações nativas do HTML e normalização do nome com `trim()`
+- Mensagens visuais de aprovação e reprovação
+- Lista temporária de participantes aprovados
+- Contador atualizado dinamicamente com JavaScript
+- Estado mantido somente na memória do navegador
+
+### C# e regras de negócio
+
+- Aplicação de console para cadastro de participantes
+- Validação segura da idade com `int.TryParse`
+- Regra de participação encapsulada em `PodeParticipar()`
+- Inicialização do objeto por construtor
+- Propriedades protegidas com `private set`
+
+### SQL e banco de dados
+
+- Tabelas de clientes e participantes
+- Operações CRUD e consultas por ID
+- Filtros, ordenação, aliases e classificação com `CASE WHEN`
+- Contagens e funções de agregação
+- Análise de qualidade com `DISTINCT`, `GROUP BY` e `HAVING`
+
+### Python e automação
+
+- Processamento de participantes com listas e dicionários
+- Classificação por idade
+- Geração de relatório em arquivo texto
+- Total de participantes e taxa de aprovação
+
+### Git e documentação
+
+- Histórico incremental de commits
+- Revisão seletiva antes das publicações
+- Documentação da evolução e dos próximos passos
+
+Todos os dados utilizados nas demonstrações são fictícios.
 
 ## Estrutura do projeto
 
@@ -44,7 +74,7 @@ Todos os dados utilizados nos exercícios são fictícios.
 | `backend-csharp/` | Aplicação de console e fundamentos de backend em C# |
 | `database/` | Scripts e exercícios de banco de dados SQL |
 | `automation-python/` | Scripts de automação e processamento de dados |
-| `docs/` | Trilha de aprendizagem e documentação das sessões |
+| `docs/` | Trilha de aprendizagem, imagens e documentação das sessões |
 
 ## Como executar
 
@@ -63,7 +93,7 @@ dotnet run --project backend-csharp/SistemaGestao.Console
 ### Automação em Python
 
 ~~~powershell
-py automation-python/resumo_participantes.py
+python automation-python/resumo_participantes.py
 ~~~
 
 ### Banco de dados
@@ -71,16 +101,26 @@ py automation-python/resumo_participantes.py
 Abra os scripts no MySQL Workbench e execute somente os comandos que deseja estudar ou testar:
 
 - `database/01_fundamentos_crud_clientes.sql` — fundamentos e consultas de clientes;
-- `database/02_participantes.sql` — tabela, inserções e consultas de participantes.
+- `database/02_participantes.sql` — tabela, inserções e consultas de participantes;
+- `database/03_qualidade_dados_participantes.sql` — consultas com `DISTINCT`, `GROUP BY`, `COUNT` e `HAVING`.
+
+## Limitações atuais
+
+- Os participantes da interface são mantidos somente na memória do navegador
+- O Front-end ainda não consome uma API
+- A aplicação C# ainda não está conectada ao MySQL
+- Os scripts Python e SQL são executados separadamente
+- Ainda não existem autenticação, testes automatizados ou implantação online
 
 ## Próximos passos
 
-- Exibir os participantes cadastrados em uma lista temporária na interface web
-- Criar uma API para o backend
-- Persistir participantes no banco de dados
-- Conectar o front-end à API
-- Adicionar testes
-- Publicar uma demonstração do sistema
+- Criar uma API para participantes
+- Persistir os participantes no banco de dados
+- Conectar o Front-end à API
+- Implementar operações completas de cadastro, consulta, edição e exclusão
+- Adicionar testes automatizados
+- Publicar uma demonstração online
+- Estudar Docker e CI/CD depois que a aplicação estiver integrada localmente
 
 ## Aprendizados aplicados
 
