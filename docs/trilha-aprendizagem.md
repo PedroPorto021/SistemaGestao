@@ -109,7 +109,7 @@ Este documento complementa o `Guia_Estrategico_Desenvolvimento_TI_IA_Renda.pdf`.
 - A automação gera `automation-python/relatorio_participantes.txt`.
 - O Black Formatter foi configurado para auxiliar na formatação do código Python.
 - Commit: `cdef127 feat: gera relatorio de participantes em Python`.
-- Próxima evolução em Python: ler participantes de um arquivo JSON ou CSV antes de avançar para APIs.
+- A evolução planejada foi concluída: os participantes agora são lidos de um arquivo JSON.
 
 ### Evoluções recentes do SistemaGestao
 
@@ -141,5 +141,12 @@ Este documento complementa o `Guia_Estrategico_Desenvolvimento_TI_IA_Renda.pdf`.
 - Foi adicionada a taxa de aprovação com proteção contra divisão por zero.
 - As métricas são exibidas no terminal e gravadas no arquivo de relatório.
 - Commit: `a06cc98 feat: adiciona metricas ao relatorio de participantes`.
+- Os dados fictícios foram removidos do código Python e transferidos para `automation-python/participantes.json`.
+- O script passou a carregar os participantes com `json.load()`.
+- A leitura utiliza `with open`, modo `r` e codificação UTF-8.
+- Foram testados o conjunto normal de dados e uma lista vazia.
+- A proteção contra divisão por zero foi preservada.
+- Commit: `621f0d4 feat: carrega participantes de arquivo json`.
+- Próxima evolução em Python: tratar arquivo inexistente ou JSON inválido antes de avançar para APIs.
 
 Os módulos continuam independentes. Ainda não existe integração entre Front-end, C#, Python e MySQL.

@@ -55,10 +55,12 @@ Evoluir o projeto até formar um sistema de gestão completo, conectando interfa
 
 ### Python e automação
 
+- Leitura de participantes a partir de arquivo JSON
 - Processamento de participantes com listas e dicionários
 - Classificação por idade
 - Geração de relatório em arquivo texto
 - Total de participantes e taxa de aprovação
+- Proteção contra divisão por zero quando a lista está vazia
 
 ### Git e documentação
 
@@ -75,7 +77,7 @@ Todos os dados utilizados nas demonstrações são fictícios.
 | `frontend-js/` | Interface construída com HTML, CSS e JavaScript |
 | `backend-csharp/` | Aplicação de console e fundamentos de backend em C# |
 | `database/` | Scripts e exercícios de banco de dados SQL |
-| `automation-python/` | Scripts de automação e processamento de dados |
+| `automation-python/` | Leitura de JSON, processamento de dados e geração de relatório |
 | `docs/` | Trilha de aprendizagem, imagens e documentação das sessões |
 
 ## Como executar
@@ -98,6 +100,8 @@ dotnet run --project backend-csharp/SistemaGestao.Console
 python automation-python/resumo_participantes.py
 ~~~
 
+Os dados de entrada são lidos de `automation-python/participantes.json`, e o resultado é gravado em `automation-python/relatorio_participantes.txt`.
+
 ### Banco de dados
 
 Abra os scripts no MySQL Workbench e execute somente os comandos que deseja estudar ou testar:
@@ -112,7 +116,8 @@ Abra os scripts no MySQL Workbench e execute somente os comandos que deseja estu
 - O Front-end ainda não consome uma API
 - A aplicação C# ainda não está conectada ao MySQL
 - Os scripts Python e SQL são executados separadamente
-- Ainda não existem autenticação, testes automatizados ou implantação online
+- Somente o Front-end está publicado; o backend e as automações ainda são executados localmente
+- Ainda não existem autenticação ou testes automatizados
 
 ## Próximos passos
 
@@ -121,12 +126,12 @@ Abra os scripts no MySQL Workbench e execute somente os comandos que deseja estu
 - Conectar o Front-end à API
 - Implementar operações completas de cadastro, consulta, edição e exclusão
 - Adicionar testes automatizados
-- Publicar uma demonstração online
+- Evoluir a demonstração online para uma apresentação interativa do projeto
 - Estudar Docker e CI/CD depois que a aplicação estiver integrada localmente
 
 ## Aprendizados aplicados
 
-`HTML` • `CSS` • `JavaScript` • `C#` • `.NET` • `SQL` • `Python` • `Git` • `GitHub`
+`HTML` • `CSS` • `JavaScript` • `C#` • `.NET` • `SQL` • `Python` • `JSON` • `Git` • `GitHub` • `GitHub Pages`
 
 ## Autor
 
